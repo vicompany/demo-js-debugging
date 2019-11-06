@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+
+  p Show all users on the northern hemisphere.
+
+  ul
+  each user in users
+    li= `User: ${ user.id} ${user.name}`
+  else
+    li: strong OMG, there are no users!

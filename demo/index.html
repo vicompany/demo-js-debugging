@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/dist/css/main.css">
+
+    <title>Hello World</title>
+</head>
+
+<body class="container">
+    <a class="sr-only-focusable" href="#main">Skip to main content</a>
+
+    <header>
+        <h1 class="logo">
+            <a href="/">
+                <img src="https://www.placehold.it/100x50" class="logo__image" alt="Site title">
+            </a>
+        </h1>
+
+        <nav>
+            <h1 class="sr-only">Navigation</h1>
+
+            <a href="#first">first</a>
+            <a href="#second">second</a>
+            <a href="#third">third</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>Hello World</h1>
+
+        <button class="js-button" type="button">Load dynamic script</button>
+    </main>
+
+    <footer>
+        <small>&copy; <a href="https://vicompany.nl">VI Company</a> 2019</small>
+    </footer>
+
+    <script type="module" src="/dist/js/main-module.mjs"></script>
+    <script nomodule src="/dist/js/main-nomodule.js"></script>
+</body>
+
+</html>

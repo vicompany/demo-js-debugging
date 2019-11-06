@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Browser: Chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}/demo/src"
+    },
+    {
+      "type": "firefox",
+      "request": "launch",
+      "name": "Browser: Firefox",
+      "url": "http://localhost:8080",
+      "pathMappings": [
+        {
+          "url": "http://localhost:8080",
+          "path": "${workspaceFolder}/demo"
+        },
+      ]
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Node: Attach by Process ID",
+      "processId": "${command:PickProcess}",
+      "skipFiles": [
+        "<node_internals>/**/*.js",
+        "${workspaceFolder}/demo/node_modules/**/*.js"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Node: Launch Program",
+      "program": "${workspaceFolder}/demo/server/app.js",
+      "skipFiles": [
+        "<node_internals>/**/*.js",
+        "${workspaceFolder}/demo/node_modules/**/*.js"
+      ]
+    },
+  ]
+}

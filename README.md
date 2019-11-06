@@ -107,9 +107,6 @@ npx ndb server/app.js
 
 https://github.com/GoogleChromeLabs/ndb
 
-![Magic](https://media.giphy.com/media/VHngktboAlxHW/giphy.gif)
-
-
 ### More information
 
 - https://nodejs.org/en/docs/guides/debugging-getting-started/

@@ -84,7 +84,7 @@ The Node.js script has to be running with the  `--inspect` enabled. The default 
 
 You probably don't want to debug internal Node.js scripts or node modules, so you can add the following to the [launch configuration](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_skipping-uninteresting-code-node-chrome):
 
-```json
+```js
 "skipFiles": [
   "<node_internals>/**/*.js" // 'magic name' for built-in core modules of Node.js
   "${workspaceFolder}/node_modules/**/*.js",

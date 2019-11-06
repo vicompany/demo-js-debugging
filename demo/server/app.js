@@ -21,7 +21,9 @@ app.use(compression());
 app.use(express.static(path.join(__dirname, '../dist')));
 app.use(favicon(path.join(__dirname, 'views', 'img', 'favicon.ico')));
 
-app.get('/', (req, res) =>	res.render('index', { title: 'Debug like a PRO!' }));
+app.get('/', (req, res) =>	{
+	res.render('index', { title: 'Debug like a PRO!' });
+});
 
 // DO NOT DO THIS! Highly inefficient code, for demo purposes only!
 // There are also 2 bugs in this code.
@@ -32,7 +34,7 @@ app.get('/users', async (req, res) => {
 	// Only show users on the northern hemisphere
 	users = users.filter(u => u.address.lat > 0);
 
-	return res.render('users', {
+	res.render('users', {
 		title: 'Users',
 		users,
 	});
